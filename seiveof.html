@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sieve of Eratosthenes</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Sieve of Eratosthenes</h1>
+    <p>This page demonstrates the Sieve of Eratosthenes algorithm for finding all prime numbers up to a specified limit.</p>
+    <input type="number" id="limitInput" placeholder="Enter limit (e.g. 100)" />
+<button onclick="startSieve()">Run Sieve</button>
+<div id="grid"></div>
+<script>
+    /*Really take your time and learn this. It is a great way to understand how functions work and how to use them in a real world application.*/
+    function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function startSieve() {
+  const limit = parseInt(document.getElementById("limitInput").value);
+  const grid = document.getElementById("grid");
+  grid.innerHTML = ""; // Clear previous run
+
+  const isPrime = Array(limit + 1).fill(true);
+  isPrime[0] = isPrime[1] = false;
+
+  for (let i = 2; i <= limit; i++) {
+    const cell = document.createElement("div");
+    cell.className = "cell";
+    cell.id = `cell-${i}`;
+    cell.textContent = i;
+    grid.appendChild(cell);
+  }
+
+  for (let i = 2; i * i <= limit; i++) {
+    if (isPrime[i]) {
+      for (let j = i * i; j <= limit; j += i) {
+        isPrime[j] = false;
+        await sleep(50); // Delay for visual effect
+        document.getElementById(`cell-${j}`).classList.add("not-prime");
+      }
+    }
+  }
+
+  for (let i = 2; i <= limit; i++) {
+    if (isPrime[i]) {
+      document.getElementById(`cell-${i}`).classList.add("prime");
+    }
+  }
+}
+</script>
+</body>
+<footer>
+    <p>Created by Moe. A project where I have an idea, use AI and run back through it to understand.</p>
+    </footer>
+</html>
