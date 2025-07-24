@@ -38,12 +38,22 @@ nav a:hover {
   text-decoration: underline;
 }
 .about{
-  text-align: right;
-  background-image: url(images/chainlink.jpg);
-  background-size: 60%;
-  background-position: right;
-  background-blend-mode: overlay;
-  background-repeat: no-repeat;
+ display: flex;
+ align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about img {
+  width: 20%;
+  height: auto;
+  border-radius: 8px;
+}
+.about p {
+  flex: 1;
+  font-family: 'arial', sans-serif;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #555;
 }
 
 /* Main Content */
