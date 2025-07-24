@@ -26,14 +26,24 @@ nav {
 }
 
 nav a {
-  color: #fff;
-  text-decoration: none;
+  color: #363636;
+  text-align: center;
+  display: inline-block;
+  text-decoration: whitesmoke;
   margin: 0 15px;
   font-weight: bold;
 }
 
 nav a:hover {
   text-decoration: underline;
+}
+.about{
+  text-align: right;
+  background-image: url(images/chainlink.jpg);
+  background-size: 60%;
+  background-position: right;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
 }
 
 /* Main Content */
@@ -47,13 +57,25 @@ main {
 
 /* Footer */
 footer {
-  text-align: center;
+  text-align: right;
   padding: 15px;
   margin-top: 40px;
-  background-color: #1f2937;
-  color: #fff;
+  margin-right: 40px;
+  color: #000000;
+  background-image: url('images/coflagsm.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-
+/* Image Styles */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  image-rendering: optimizeQuality;
+  align-self:last baseline;
+}
 /* Responsive Layout */
 @media (max-width: 600px) {
   nav a {
