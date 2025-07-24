@@ -16,7 +16,7 @@ body {
 /* Header and Navigation */
 header {
   background-color: #1f2937;
-  color: #cccbcb;
+  color: #fff;
   padding: 20px;
   text-align: center;
 }
@@ -26,7 +26,7 @@ nav {
 }
 
 nav a {
-  color: #181616; /* Link color needs to be changed */
+  color: #fff;
   text-decoration: none;
   margin: 0 15px;
   font-weight: bold;
@@ -51,7 +51,7 @@ footer {
   padding: 15px;
   margin-top: 40px;
   background-color: #1f2937;
-  color: #9f9e9e;
+  color: #fff;
 }
 
 /* Responsive Layout */
@@ -65,26 +65,4 @@ footer {
     margin: 15px;
     padding: 15px;
   }
-}
-#grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
-  gap: 5px;
-  margin-top: 20px;
-}
-.cell {
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  background-color: lightgray;
-  font-weight: bold;
-}
-.prime {
-  background-color: #4caf50;
-  color: white;
-}
-.not-prime {
-  background-color: #f44336;
-  color: white;
 }
