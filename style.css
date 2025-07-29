@@ -15,9 +15,8 @@ body {
 
 /* Header and Navigation */
 .image-header {
-  position: relative;
+  position: center;
   text-align: 100%;
-  max-width: 600px;
 }
 .image-header img {
   width: 100%;
@@ -64,8 +63,8 @@ nav a:hover {
 .about{
  display: flex;
  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+ justify-content: space-between;
+ gap: 20px;
 }
 .about img {
   width: 5%;
@@ -74,6 +73,7 @@ nav a:hover {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .about p {
+  margin-right: 10%;
   flex: 1;
   font-family: 'Arial', sans-serif;
   font-size: 1.1em;
