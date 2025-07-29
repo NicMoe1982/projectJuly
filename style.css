@@ -15,15 +15,26 @@ body {
 
 /* Header and Navigation */
 .image-header {
-  position: center;
-  text-align: 100%;
+  position: relative;
+  text-align: center;
+  padding: 20px;
 }
 .image-header img {
   width: 100%;
   height: auto;
   display: block;
   box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
+.image-header h1 {
+  position: absolute;
+  top: 20px; /* adjust as needed */
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+  color: white; /* improve contrast */
+}
+
 .overlay-title {
   position: absolute;
   top: 10%;
