@@ -23,6 +23,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
 }
 .overlay-title {
   position: absolute;
@@ -67,9 +68,10 @@ nav a:hover {
   gap: 20px;
 }
 .about img {
-  width: 20%;
+  width: 5%;
   height: auto;
   border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 .about p {
   flex: 1;
@@ -92,13 +94,14 @@ main {
 footer {
   text-align: right;
   padding: 15px;
-  margin-top: 40px;
+  margin-top: 80px;
   margin-right: 40px;
   color: #000000;
   background-image: url('images/coflagsm.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
 }
 /* Image Styles */
 img {
@@ -111,13 +114,31 @@ img {
 }
 /* Responsive Layout */
 @media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
   nav a {
     display: block;
     margin: 10px 0;
   }
 
   main {
+    font-size: 1em;
     margin: 15px;
     padding: 15px;
+  }
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+  .about p {
+    text-align: center;
+    font-size: 1em;
   }
 }
