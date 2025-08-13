@@ -1,0 +1,9 @@
+.horizontal {
+    display: flex;
+    gap: 1rem;
+    padding: auto;
+}
+header.h1 {
+    text-align: center;
+    padding: 1rem;
+}
