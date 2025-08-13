@@ -3,7 +3,10 @@
     gap: 1rem;
     padding: auto;
 }
-header.h1 {
+.overlay-title {
     text-align: center;
     padding: 1rem;
+}
+.overlay-banner {
+    text-align: center;
 }
