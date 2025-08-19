@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body id="productPage">
     <header class="image-header">
@@ -14,8 +18,7 @@
         <h1 class="overlay-title">Ben Molina Fence Company</h1>
         <p class="overlay-banner">Reliable Fencing Solutions for Your Home or Business</p>
     </header>
-    <!--images here-->
-    <!--Navigation Bar-->
+   
     <nav>
         <ul>
             <li><a href="#about">About Us</a></li>               
@@ -44,31 +47,28 @@
             <img src="images/brokenChainLink.jpg" alt="fence repair">
             <figcaption>Repairs</figcaption>
             <div class="hover-text">or repair what you already have</div>
+        </figure>
     </section>
-    <br>
-    <h3 id="end-note">We've got you covered!</h3>
-    <!--Contact Section. Add Something Businessy Here-->
     <section id="contact">
-        <h2>Contact Us</h2>
+        
         <form>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" pattern-"^[A-Za-z\s]{1,50}$" title="Please enter a valid name (1-50 characters)" required>
             
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
             
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="10" pattern="^[A-Za-z0-9\s.,!?]{4,300}$" required></textarea>
             
             <button type="submit">Send</button>
         </form>
-        <p>Phone: (719)671-XXXX</p>
     </section>
-</body>
-<footer class="footer">
+    <footer class="footer">
     <div class="footer-links"><a href="index.html">Home</a></div>
     <p>&copy; 2023 Ben Molina Fence Company. All rights reserved.</p>
-    <p>Follow us on <a href="https://www.facebook.com/profile.php?id=61574137150946" target="_blank">Facebook</a>.</p>
+    <p>Follow us on <a rel="noopener noreferrer" href="https://www.facebook.com/profile.php?id=61574137150946" target="_blank">Facebook</a>.</p>
     <p>Website designed by Moe.</p>
     </footer>
+</body>
 </html>
