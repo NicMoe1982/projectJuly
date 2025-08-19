@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ben Molina Fence Company</title>
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Allan' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
 </head>
-<body>
+<body id="productPage">
     <header class="image-header">
-        <img src="images/theMan.jpg" alt="Ben Molina Fence Company Logo">
-        <h1 class="overlay-title">Ben Molina Fence Cmpany</h1>
+        <img id="title-image" src="images/theMan.jpg" alt="Ben Molina Fence Company Logo">
+        <h1 class="overlay-title">Ben Molina Fence Company</h1>
         <p class="overlay-banner">Reliable Fencing Solutions for Your Home or Business</p>
     </header>
     <!--images here-->
@@ -23,17 +25,23 @@
     </nav>
     <section id="about" class="about">
         <h2>About Us</h2>
-        <img src="images/chainlink.jpg" alt="Fence">
         <p>Colorado native with decades of experiance, Ben Molina Fence Company is passionate about providing high-quality fencing services in your area. Our mission is to deliver durable and beautiful fencing solutions.</p>
     </section>
     <!--Services Section. Add Something Cool Here-->
     <section id="services">
-        <h2>Our Services</h2>
-        <ul>
-            <li>Residential Fencing</li>
-            <li>Commercial Fencing</li>
-            <li>Fence Repairs</li>
-        </ul>
+        <h2 id="service-heading">Our Services</h2>
+        <figure>
+            <img src="images/.jpg" alt="wood fence">
+            <figcaption>Residential</figcaption>
+        </figure>
+        <figure>
+            <img src="images/commercialFence.jpg" alt="chainlink fence">
+            <figcaption>Commercial</figcaption>
+        </figure>
+        <figure>
+            <img src="images/brokenChainLink.jpg" alt="fence repair">
+            <figcaption>Repairs</figcaption>
+       
     </section>
     <!--Contact Section. Add Something Businessy Here-->
     <section id="contact">
@@ -51,7 +59,6 @@
             <button type="submit">Send</button>
         </form>
         <p>Phone: (719)671-XXXX</p>
-        <p>Email: info@benmolinafence.com</p>
     </section>
 </body>
 <footer class="footer">
