@@ -1,0 +1,28 @@
+{
+  "blacklist": [
+    "viagra",
+    "free money",
+    "work from home",
+    "click here",
+    "buy now",
+    "limited offer",
+    "winner",
+    "<script>",
+    "SELECT * FROM",
+    "DROP TABLE",
+    "UNION SELECT",
+    "--",
+    "' OR '1'='1",
+    "onerror=",
+    "hate speech",
+    "explicit content",
+    "racial slur",
+    "profanity",
+    "violent threat",
+    "http://",
+    ".ru",
+    "@gmail.com",
+    "user-agent: curl",
+    "bot traffic"
+  ]
+}
